@@ -243,9 +243,9 @@
   .detail-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); border-radius: 10px; padding: 28px; }
   .detail-card h3 { font-size: 15px; font-weight: 700; color: white; margin-bottom: 10px; }
   .detail-card p { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.7; font-weight: 300; }
-  .waterline-mock { margin-top: 16px; height: 80px; background: linear-gradient(to right, rgba(241,90,34,0.1), rgba(241,90,34,0.25), rgba(241,90,34,0.15)); border-radius: 6px; position: relative; overflow: hidden; }
+  .waterline-mock { margin-top: 16px; height: 150px; width: 100%; background: linear-gradient(to right, rgba(241,90,34,0.1), rgba(241,90,34,0.25), rgba(241,90,34,0.15)); border-radius: 6px; position: relative; overflow: hidden; }
   .waterline-mock::after { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: var(--orange); }
-  .heat-mock { margin-top: 16px; display: flex; align-items: flex-end; gap: 2px; height: 60px; }
+  .heat-mock { margin-top: 40px; display: flex; align-items: flex-end; gap: 2px; height: 150px; }
   .heat-bar { flex: 1; background: rgba(241,90,34,0.3); border-radius: 2px 2px 0 0; }
 
   /* ── CTA / FOOTER ── */
@@ -354,7 +354,7 @@
   <div class="hero-content">
     <div>
       <h1>Fund Risk <em>Intelligence</em> System</h1>
-      <p>AI-powered reputational &amp; governance risk monitoring for fund managers — aggregating trusted data sources, classifying 13 risk categories, and delivering auditable scores on a 20-point scale. Updated daily.</p>
+      <p>AI-powered reputational &amp; governance risk monitoring for fund managers — aggregating trusted data sources, classifying 13 risk categories, and delivering auditable scores on a 20-point scale. Updated weekly.</p>
       <div class="hero-ctas">
         <a href="https://f360.foresight-analytics.com/" target="_blank" class="btn-primary">Request a Demo →</a>
         <a href="#how" class="btn-outline">How It Works</a>
@@ -362,7 +362,7 @@
     </div>
     <div class="hero-stats">
       <div class="stat-card">
-        <div class="num">50K+</div>
+        <div class="num">75K+</div>
         <div class="label">Articles Processed Since Launch</div>
       </div>
       <div class="stat-card">
@@ -410,34 +410,10 @@
       </ul>
     </div>
     <div class="fade-in" style="transition-delay:0.1s">
-      <div class="overview-stats">
-        <div class="ov-stat">
-          <div class="big">50K+</div>
-          <div class="desc">Articles Processed</div>
-          <div class="sub">Since launch across 8 sources</div>
-        </div>
-        <div class="ov-stat">
-          <div class="big">13</div>
-          <div class="desc">Risk Factors</div>
-          <div class="sub">Rule-based classification</div>
-        </div>
-        <div class="ov-stat">
-          <div class="big">≈95%</div>
-          <div class="desc">Classification Accuracy</div>
-          <div class="sub">Validated against manual review</div>
-        </div>
-        <div class="ov-stat">
-          <div class="big">1,000+</div>
-          <div class="desc">Funds Scalable</div>
-          <div class="sub">Architecture built to scale</div>
-        </div>
-      </div>
-      <div class="sources-row">
-        <div class="src-label">Data Sources</div>
-        <div class="src-pills">
-          <span>Refinitiv</span><span>ASIC</span><span>SEC EDGAR</span><span>FCA</span><span>SFC</span><span>ESMA</span><span>Google News</span><span>Yahoo Finance</span>
-        </div>
-      </div>
+         
+          <img src="dashboard-blurred.png" alt="" style="max-width: 650px;
+    min-height: 300px;">
+      
     </div>
   </div>
 </section>
@@ -539,48 +515,28 @@
     </div>
 
     <div class="categories-grid fade-in">
-      <div class="cat-chip"><span class="cat-name">Bankruptcy / Liquidation</span><span class="cat-range">19–20</span></div>
-      <div class="cat-chip"><span class="cat-name">Criminal Fraud</span><span class="cat-range">13–19</span></div>
-      <div class="cat-chip"><span class="cat-name">Class Action Lawsuit</span><span class="cat-range">13–17</span></div>
-      <div class="cat-chip"><span class="cat-name">Liquidity Crisis</span><span class="cat-range">11–17</span></div>
-      <div class="cat-chip"><span class="cat-name">Regulatory Enforcement</span><span class="cat-range">12–16</span></div>
-      <div class="cat-chip"><span class="cat-name">Regulatory Investigation</span><span class="cat-range">9–16</span></div>
-      <div class="cat-chip"><span class="cat-name">Data Breach / Cyber</span><span class="cat-range">9–16</span></div>
-      <div class="cat-chip"><span class="cat-name">Compliance Breach</span><span class="cat-range">9–16</span></div>
-      <div class="cat-chip"><span class="cat-name">Scandal / Fraud Allegations</span><span class="cat-range">8–15</span></div>
-      <div class="cat-chip"><span class="cat-name">Corporate Governance</span><span class="cat-range">8–15</span></div>
-      <div class="cat-chip"><span class="cat-name">Key Personnel Departure</span><span class="cat-range">5–15</span></div>
-      <div class="cat-chip"><span class="cat-name">Rating Downgrade</span><span class="cat-range">5–15</span></div>
-      <div class="cat-chip"><span class="cat-name">General Litigation</span><span class="cat-range">5–15</span></div>
-      <div class="cat-chip" style="border-color:rgba(241,90,34,0.25); background:rgba(241,90,34,0.08)">
-        <span class="cat-name" style="color:rgba(255,255,255,0.4); font-style:italic; font-size:12px">Score = max(category) + volume bonus</span>
+      <div class="cat-chip"><span class="cat-name">Bankruptcy / Liquidation</span></div>
+      <div class="cat-chip"><span class="cat-name">Criminal Fraud</span></div>
+      <div class="cat-chip"><span class="cat-name">Class Action Lawsuit</span></div>
+      <div class="cat-chip"><span class="cat-name">Liquidity Crisis</span></div>
+      <div class="cat-chip"><span class="cat-name">Regulatory Enforcement</span></div>
+      <div class="cat-chip"><span class="cat-name">Regulatory Investigation</span></div>
+      <div class="cat-chip"><span class="cat-name">Data Breach / Cyber</span></div>
+      <div class="cat-chip"><span class="cat-name">Compliance Breach</span></div>
+      <div class="cat-chip"><span class="cat-name">Scandal / Fraud Allegations</span></div>
+      <div class="cat-chip"><span class="cat-name">Corporate Governance</span></div>
+      <div class="cat-chip"><span class="cat-name">Key Personnel Departure</span></div>
+      <div class="cat-chip"><span class="cat-name">Rating Downgrade</span></div>
+      <div class="cat-chip"><span class="cat-name">General Litigation</span></div>
+       <div class="cat-chip" style="border-color:rgba(241,90,34,0.25); background:rgba(241,90,34,0.08)">
+        <span class="cat-name" style="color:rgba(255,255,255,0.4); font-style:italic; font-size:12px">(Score = max(category) + volume bonus)</span>
       </div>
+    
     </div>
+    <div style="margin-top:20px; font-size:13px; color:rgba(255,255,255,0.6); max-width:600px;">
+  Fund Score = highest active risk across all tracked incidents.
+</div>
 
-    <!-- Scoring Formula -->
-    <!-- <div class="formula-box fade-in">
-      <div class="f-label">Scoring Formula</div>
-      <div class="f-eq">Event Score = Category Min + Severity × ( Category Max – Category Min )</div>
-      <div class="f-example">
-        <strong>Example:</strong> Rating Downgrade (range 5–15), Severity = 0.9 &nbsp;→&nbsp; 5 + 0.9 × (15 – 5) = 14.0 ≈ <strong>14 (ELEVATED)</strong>
-      </div>
-    </div> -->
-
-    <!-- Walkthrough table -->
-    <!-- <table class="scoring-table fade-in">
-      <thead>
-        <tr>
-          <th>#</th><th>Risk Factor</th><th>Range</th><th>Severity</th><th>Calculation</th><th>Score</th><th>Tier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td style="color:rgba(255,255,255,0.5)">1</td><td>Bankruptcy / Liquidation</td><td>19–20</td><td>0.8</td><td>19 + 0.8 × (20–19) = 19.8 ≈ 20</td><td style="color:#F15A22;font-weight:700">20</td><td><span class="t-badge t-critical">CRITICAL</span></td></tr>
-        <tr><td style="color:rgba(255,255,255,0.5)">2</td><td>Criminal Fraud</td><td>15–19</td><td>0.7</td><td>15 + 0.7 × (19–15) = 17.8 ≈ 18</td><td style="color:#F15A22;font-weight:700">18</td><td><span class="t-badge t-severe">SEVERE</span></td></tr>
-        <tr><td style="color:rgba(255,255,255,0.5)">3</td><td>Scandal / Fraud Allegations</td><td>8–15</td><td>0.9</td><td>8 + 0.9 × (15–8) = 14.3 ≈ 14</td><td style="color:#ffaa44;font-weight:700">14</td><td><span class="t-badge t-elevated">ELEVATED</span></td></tr>
-        <tr><td style="color:rgba(255,255,255,0.5)">4</td><td>Compliance Breach</td><td>9–16</td><td>0.3</td><td>9 + 0.3 × (16–9) = 11.1 ≈ 11</td><td style="color:#8fa0b0;font-weight:700">11</td><td><span class="t-badge t-moderate">MODERATE</span></td></tr>
-        <tr><td style="color:rgba(255,255,255,0.5)">5</td><td>Key Personnel Departure</td><td>6–15</td><td>0.1</td><td>6 + 0.1 × (15–6) = 6.9 ≈ 7</td><td style="color:#6b8090;font-weight:700">7</td><td><span class="t-badge t-low">LOW</span></td></tr>
-      </tbody>
-    </table> -->
   </div>
 </section>
 
@@ -658,95 +614,31 @@
     </div>
 
     <div class="dashboard-mock fade-in">
-      <div class="metrics-bar">
-        <div class="metric">
-          <div class="m-label">Total Funds</div>
-          <div class="m-val">102</div>
-        </div>
-        <div class="metric">
-          <div class="m-label">At Risk</div>
-          <div class="m-val orange">61</div>
-        </div>
-        <div class="metric">
-          <div class="m-label">High Risk</div>
-          <div class="m-val blue">10</div>
-        </div>
-        <div class="metric">
-          <div class="m-label">7D Heat</div>
-          <div class="m-val red">42</div>
-        </div>
-      </div>
-      <div class="mock-topbar">
-        <div>
-          <div class="title"><span>Fund Risk</span> Intelligence</div>
-          <div class="subtitle">AI-Powered Multi-Source Risk Monitoring &amp; Event Timeline Analysis</div>
-        </div>
-        <div class="live-badge">LIVE · Last updated 05:10 PM</div>
-      </div>
-      <div class="mock-body">
-        <div class="mock-sidebar">
-          <div class="briefing-title">⚡ AI Risk Briefing</div>
-          <div class="brief-item">
-            <div class="dot" style="background:#F15A22"></div>
-            <p>Market Financial Solutions at CRITICAL risk (20/20)</p>
-          </div>
-          <div class="brief-item">
-            <div class="dot" style="background:#ffaa44"></div>
-            <p>9 funds in SEVERE tier, including BlackRock and Apollo (16/20)</p>
-          </div>
-          <div class="brief-item">
-            <div class="dot" style="background:#60a5fa"></div>
-            <p>10 pending legal/regulatory proceedings across 6 funds</p>
-          </div>
-          <div class="brief-item">
-            <div class="dot" style="background:#4ade80"></div>
-            <p>Corporate Governance is top hotspot with 495 events</p>
-          </div>
-          <div class="brief-item">
-            <div class="dot" style="background:#8fa0b0"></div>
-            <p>Only Pendal Group is in MITIGATING state</p>
-          </div>
-        </div>
-        <div class="mock-main">
-          <div class="feed-title">
-            📰 Latest Risk Events
-            <span class="event-count">77 events</span>
-          </div>
-          <div class="feed-item">
-            <span class="severity-badge sev-moderate">MODERATE 12</span>
-            <span class="fund-name">BlackRock</span>
-            <span class="event-text">Roundup: BlackRock Asia Fund Records First Default — Mingtiandi</span>
-            <span class="cat-tag">Liquidity Crisis</span>
-          </div>
-          <div class="feed-item">
-            <span class="severity-badge sev-moderate">MODERATE 10</span>
-            <span class="fund-name">Macquarie</span>
-            <span class="event-text">Hedge fund Balyasny has hired Macquarie's commodities technology guy</span>
-            <span class="cat-tag">Corp. Governance</span>
-          </div>
-          <div class="feed-item">
-            <span class="severity-badge sev-elevated">ELEVATED 15</span>
-            <span class="fund-name">Apollo</span>
-            <span class="event-text">Apollo caps cashouts at its $25 billion debt fund. Why investors are rushing for the exit.</span>
-            <span class="cat-tag">Liquidity Crisis</span>
-          </div>
-          <div class="feed-item">
-            <span class="severity-badge sev-severe">SEVERE 16</span>
-            <span class="fund-name">Blackstone</span>
-            <span class="event-text">Blackstone loses $18 billion (16%) in MCap in 2026, biggest drop in Asset Managers sector</span>
-            <span class="cat-tag">Liquidity Crisis</span>
-          </div>
-          <div class="feed-item">
-            <span class="severity-badge sev-moderate">MODERATE 9</span>
-            <span class="fund-name">Morgan Stanley</span>
-            <span class="event-text">Don't Ignore The Insider Selling In Morgan Stanley — simplywall.st</span>
-            <span class="cat-tag">Corp. Governance</span>
-          </div>
-        </div>
-      </div>
+      <img src="dashboard.png" alt="Dashboard preview" style="width:100%; height:360px; object-fit:cover; display:block;">
     </div>
   </div>
 </section>
+
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-label">Event Intelligence</div>
+      <div class="orange-line"></div>
+      <h2 class="section-title">Every Risk is Fully Traceable</h2>
+      <p class="section-sub">
+        Each event includes AI-generated summaries, classification reasoning, source links, and category tagging — ensuring complete transparency and auditability.
+      </p>
+       <img src="event.png" alt="">
+    </div>
+
+    <!-- <div class="fade-in" style="max-width:800px;">
+     
+    </div> -->
+  </div>
+</section>
+
+
 
 <!-- ── FUND RANKINGS ── -->
 <section class="fund-detail-section">
@@ -796,8 +688,9 @@
     <div class="detail-grid fade-in" style="margin-top:32px;">
       <div class="detail-card">
         <h3>📈 Risk Score Waterline</h3>
-        <p>Track how a fund's risk score moves over time across all 5 tiers. Colour-coded bands show CRITICAL through LOW zones. Event markers identify exactly when and why scores changed.</p>
-        <div class="waterline-mock"></div>
+        <p>Track how a fund's risk score evolves over time across all 5 risk tiers. Colour-coded bands show CRITICAL through LOW zones. Event markers identify exactly when and why scores changed. Scores decay over time as events age and are adjusted downward when the system detects a matching mitigation event.</p>
+        <!-- <div class="waterline-mock"></div> -->
+         <img src="waterline.png" alt="" class="waterline-mock">
         <div style="margin-top:10px;font-size:11px;color:rgba(255,255,255,0.4)">Current 16 · Max 16 · Min 10 · Change +5</div>
       </div>
       <div class="detail-card">
